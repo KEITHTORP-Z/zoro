@@ -1,7 +1,6 @@
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 pyrogram==2.0.106
-py-tgcalls==0.9.7
 TgCrypto==1.2.5
 yt-dlp==2023.12.30
 python-dotenv==1.0.0
