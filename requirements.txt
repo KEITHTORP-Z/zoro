@@ -1,5 +1,6 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
 pyrogram==2.0.106
-pytgcalls==3.0.0.dev32
-yt-dlp==2023.12.30
+tgcrypto
+py-tgcalls==0.9.7
+yt-dlp
+fastapi
+uvicorn
