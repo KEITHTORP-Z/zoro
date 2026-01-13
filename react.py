@@ -1,12 +1,14 @@
+import os
 import yt_dlp
 from fastapi import FastAPI
 from pyrogram import Client
 from pytgcalls import PyTgCalls
 from pytgcalls.types import ExternalMedia
 
-API_ID = int("YOUR_API_ID")
-API_HASH = "YOUR_API_HASH"
-SESSION = "assistant"
+# Read from Koyeb environment
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
+SESSION = os.getenv("SESSION_NAME", "assistant")
 
 app = FastAPI()
 
