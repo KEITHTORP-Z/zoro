@@ -1,6 +1,10 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-pyrogram==2.0.106
-py-tgcalls==0.9.7
-yt-dlp==2023.12.30
-TgCrypto==1.2.5
+yt-dlp
+aiohttp
+aiofiles
+tgcrypto
+python-dotenv
+youtube-search-python
+
+git+https://github.com/PyrogramMod/PyrogramMod.git
+py-tgcalls==2.2.9
+ntgcalls==2.0.6
