@@ -1,13 +1,13 @@
+import os
 import yt_dlp
 from fastapi import FastAPI
 from pyrogram import Client
 from pytgcalls import PyTgCalls
 from pytgcalls.types import ExternalMedia
 
-API_ID = 39884622           # your Telegram API ID
-API_HASH = "9027d8c0e0a141e3feb76832dfebcb34" # your Telegram API Hash
-SESSION = "1BZWaqwUAUGY7J82D4VeZIULZnItj7ejdbWHKqbHus1qCMBe9UWydimKEDjkth420Pl6Mw1YoJDHvvbK8yUk-iVrBPPQbqluuT8NNesAz4_qtQzyMItDdgR5thRbjfV5IMKYsQHNUUdWyynIfHFoyU0NWgZKv852j--gfmswhTxR9f-uPI5w2acd-zT5PX7uRSPArVQCjdRtNB3pcTiciDAJrxhpOSDAv61drkc-ZtnqrCbWzCg8j1faNPRuNEpN36Is6n3v0YHuJ-UWRyrt3nkRK-tLThmKklZKH9-YjxgFhE0NFL6M7gmHar5IkZiObz7lsT-EJ6GAJLVTYgxeaSzBwKvYAVis="     # will create assistant.session
-
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
+SESSION = "assistant"   # uses assistant.session file
 
 app = FastAPI()
 
